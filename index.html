@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit/Loss Calculator</title>
+    <script src="https://kit.fontawesome.com/5ee38f2693.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sum">
+            <h1>CALCULATE THE PROFIT/LOSS</h1>
+            <div class="cp">
+                <label for="cp">Enter the Cost price</label>
+                <input type="text" id="cp">
+            </div>
+            <div class="rate">
+                <label for="sp">Enter the Selling price</label>
+                <input type="text" id="sp">
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="fun()">SUBMIT</button>
+        </div>
+        <div class="ans">
+            <!-- <h3>Your answer is</h3> -->
+            <p id="res"></p>
+        </div>
+        <div class="note">
+            <p>If your answer is positive then you made <span>Profit</span> but if the answer is negetive you made <span>Loss</span> </p>
+        </div>
+    </div>
+    <script>
+        function fun(){
+            let cp = (document.getElementById("cp").value);
+            let sp = (document.getElementById("sp").value);
+            let s = sp - cp + ("  Answer");
+            document.getElementById("res").innerHTML=s;
+        }
+    </script>
+</body>
+</html>
