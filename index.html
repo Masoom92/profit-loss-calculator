@@ -38,7 +38,8 @@
         function fun(){
             let cp = (document.getElementById("cp").value);
             let sp = (document.getElementById("sp").value);
-            let s = sp - cp + ("  Answer");
+            let pro = sp -cp;
+            let s = (pro/cp)*100 ("  Answer");
             document.getElementById("res").innerHTML=s;
         }
     </script>
